@@ -27,12 +27,18 @@ gem "lita-ringcentral"
 Lita.configure do |config|
   config.robot.adapter = :ringcentral
 
+  # RingCentral app info
   config.adapters.ringcentral.app_key = 'my_app_key'
   config.adapters.ringcentral.app_secret = 'my_app_secret'
   config.adapters.ringcentral.server = 'my_server'
+
+  # RingCentral user info
   config.adapters.ringcentral.username = 'my_username'
   config.adapters.ringcentral.extension = 'my_extension'
   config.adapters.ringcentral.password = 'my_password'
+
+  # RingCentral bot SMS number
+  config.adapters.ringcentral.sms_number = 'my_sms_number' 
 end
 ```
 
