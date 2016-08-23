@@ -54,6 +54,10 @@ The bot will listen to and respond from the SMS number provided for `config.adap
 
 The API documentation, useful for plugin authors, can be found for the latest gem release on [RubyDoc.info](http://www.rubydoc.info/gems/lita-ringcentral).
 
+## To Do
+
+1. User address book lookup.
+
 ## Change Log
 
 See [CHANGELOG.md](CHANGELOG.md)
