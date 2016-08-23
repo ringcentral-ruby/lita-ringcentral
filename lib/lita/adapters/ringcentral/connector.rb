@@ -7,13 +7,14 @@ module Lita
       class Connector
         attr_reader :robot, :client
 
-        def initialize(robot, app_key, app_secret, server, username, extension, password, token, debug: false)
+        def initialize(robot, app_key, app_secret, server, username, extension, password, token, sms_number, debug: false)
           @robot = robot
           @client = RingCentralSdk.new app_key, app_secret, server
           @username = username
           @extension = extension
           @password = password
           @token = token
+          @sms_number = sms_number
         end
 
         def connect
@@ -39,7 +40,7 @@ module Lita
         def message(to_number, strings)
           strings.each do |s|
             @client.messages.sms.create(
-              from: @username,
+              from: @sms_number,
               to: to_number,
               text: s
             )

@@ -9,6 +9,7 @@ module Lita
       # Required attributes
       config :app_key, type: String, required: true
       config :app_secret, type: String, required: true
+      config :sms_number, type: String, required: true
 
       # Optional attributes
       config :server, type: String, default: 'platform.devtest.ringcentral.com'
@@ -29,7 +30,8 @@ module Lita
           config.username,
           config.extension,
           config.password,
-          config.token)
+          config.token,
+          config.sms_number)
       end
 
       def run
