@@ -1,4 +1,4 @@
-LITA RingCentral Adapter
+Lita RingCentral Adapter
 ========================
 
 [![Gem Version][gem-version-svg]][gem-version-link]
@@ -37,12 +37,24 @@ Lita.configure do |config|
   config.adapters.ringcentral.extension = 'my_extension'
   config.adapters.ringcentral.password = 'my_password'
 
-  # RingCentral bot SMS number
+  # RingCentral bot SMS number available to authorized user
   config.adapters.ringcentral.sms_number = 'my_sms_number' 
 end
 ```
 
-### Change Log
+### Notes
+
+This adapter supports 1:1 communications between a Lita chatbot and a user of SMS. It supports standard communications and does not have special functionality for command routes.
+
+## Usage
+
+The bot will listen to and respond from the SMS number provided as `config.adapters.ringcentral.sms_number`.
+
+## API documentation
+
+The API documentation, useful for plugin authors, can be found for the latest gem release on [RubyDoc.info](http://www.rubydoc.info/gems/lita-ringcentral).
+
+## Change Log
 
 See [CHANGELOG.md](CHANGELOG.md)
 
