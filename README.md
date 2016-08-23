@@ -21,7 +21,7 @@ Add `lita-ringcentral` to your Lita instance's Gemfile:
 gem "lita-ringcentral"
 ```
 
-### Example
+## Configuration
 
 ``` ruby
 Lita.configure do |config|
