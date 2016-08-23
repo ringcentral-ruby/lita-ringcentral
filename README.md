@@ -48,7 +48,7 @@ This adapter supports 1:1 communications between a Lita chatbot and a user of SM
 
 ## Usage
 
-The bot will listen to and respond from the SMS number provided as `config.adapters.ringcentral.sms_number`.
+The bot will listen to and respond from the SMS number provided for `config.adapters.ringcentral.sms_number`.
 
 ## API documentation
 
