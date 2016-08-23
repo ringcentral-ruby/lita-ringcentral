@@ -1,5 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-ringcentral'
+  spec.date          = '2016-08-23'
   spec.version       = '0.0.1'
   spec.authors       = ['John Wang']
   spec.email         = ["johncwang@gmail.com"]

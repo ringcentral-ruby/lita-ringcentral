@@ -1,0 +1,16 @@
+---
+languages:
+  Ruby: true
+  JavaScript: false
+  PHP: false
+  Python: false
+engines:
+  rubocop:
+    enabled: true
+ratings:
+  paths:
+  - "**.rb"
+exclude_paths:
+- docs/**/*
+- scripts/**/*
+- test/**/*
