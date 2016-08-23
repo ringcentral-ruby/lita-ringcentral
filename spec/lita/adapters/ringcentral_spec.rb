@@ -33,41 +33,10 @@ describe Lita::Adapters::RingCentral, lita: true do
     registry.config.adapters.ringcentral.password = ringcentral_password
     registry.config.adapters.ringcentral.token = JSON.parse ringcentral_token
 
+    allow(
+      described_class::Connector
+    ).to receive(:connect).with(robot, subject.config).and_return(connection)
     allow(adapter).to receive(:run)
   end
 
-  it "registers with Lita" do
-    expect(Lita.adapters[:ringcentral]).to eql(described_class)
-  end
-
-  describe "#run" do
-    puts "RUNNING"
-    stubs = Faraday::Adapter::Test::Stubs.new do |stub|
-      stub.get('/restapi/oauth/authorize') { |env| [200, {}, 'egg'] }
-    end
-    it "starts the connection" do
-      expect(adapter).to receive(:run)
-
-      subject.run
-    end
-  end
-
-  describe "#shut_down" do
-    before { allow(adapter).to receive(:shut_down) }
-
-    it "shuts down the connection" do
-      expect(adapter).to receive(:shut_down)
-
-      subject.run
-      subject.shut_down
-    end
-
-    it "triggers a :disconnected event" do
-      expect(robot).to receive(:trigger).with(:disconnected)
-
-      subject.run
-      subject.shut_down
-    end
-
-  end
 end
