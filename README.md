@@ -78,9 +78,9 @@ Lita
 
 ## License
 
-LITA RingCentral Adapter is available under the MIT license. See [LICENSE.txt](LICENSE.txt) for details.
+Lita RingCentral Adapter is available under the MIT license. See [LICENSE.txt](LICENSE.txt) for details.
 
-LITA RingCentral Adapter &copy; 2016 by John Wang
+Lita RingCentral Adapter &copy; 2016 by John Wang
 
  [gem-version-svg]: https://badge.fury.io/rb/lita-ringcentral.svg
  [gem-version-link]: http://badge.fury.io/rb/lita-ringcentral
