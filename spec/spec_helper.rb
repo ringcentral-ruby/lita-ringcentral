@@ -1,5 +1,7 @@
-require "simplecov"
-require "coveralls"
+require 'simplecov'
+require 'coveralls'
+Coveralls.wear!
+
 SimpleCov.formatters = [
   SimpleCov::Formatter::HTMLFormatter,
   Coveralls::SimpleCov::Formatter
