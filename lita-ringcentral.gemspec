@@ -4,8 +4,8 @@ Gem::Specification.new do |spec|
   spec.version       = '0.0.1'
   spec.authors       = ['John Wang']
   spec.email         = ["johncwang@gmail.com"]
-  spec.description   = %q{A RingCentral adapter for Lita.}
-  spec.summary       = %q{A RingCentral adapter for the Lita chat robot.}
+  spec.description   = %q{A RingCentral SMS adapter for Lita.}
+  spec.summary       = %q{A RingCentral SMS adapter for the Lita chat robot.}
   spec.homepage      = 'https://github.com/grokify/lita-ringcentral'
   spec.license       = 'MIT'
   spec.metadata      = { 'lita_plugin_type' => 'adapter' }
