@@ -6,6 +6,7 @@ module Lita
 
         def initialize(robot)
           @robot = robot
+          @logger_prefix = " -- #{self.class.name}: "
         end
 
         def create_user(user_data)
@@ -13,10 +14,18 @@ module Lita
         end
 
         def update(message)
-          Lita.logger.info 'Processing RingCentral Message'
-          Lita.logger.info MultiJson.encode message
+          m = message
+          unless m.is_a?(Hash) && m.key?('event') && m['event'].index('/message-store/instant?type=SMS').is_a?(Fixnum)
+            return
+          end
+          unless m.key?('body') && m['body'].key?('from') && m['body']['from'].key?('phoneNumber')
+            return
+          end
+          Lita.logger.info "#{@logger_prefix}Processing RingCentral Message"
+          Lita.logger.info "#{@logger_prefix}" + MultiJson.encode(message)
+
           user_phone_number = message['body']['from']['phoneNumber']
-          Lita.logger.info "Message received from #{user_phone_number}"
+          Lita.logger.info "#{@logger_prefix}Message received from #{user_phone_number}"
           user = Lita::User.find_by_name user_phone_number
           user = create_user(message['body']['from']) unless user
           source = Lita::Source.new user: user #, room: user_phone_number

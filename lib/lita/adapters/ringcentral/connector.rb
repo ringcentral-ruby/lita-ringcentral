@@ -15,6 +15,7 @@ module Lita
           @password = password
           @token = token
           @sms_number = sms_number
+          @logger_prefix = " -- #{self.class.name}: "
         end
 
         def connect
@@ -22,7 +23,7 @@ module Lita
         end
 
         def client_connect
-          Lita.logger.info('Authenticating with RingCentral.')
+          Lita.logger.info("#{@logger_prefix}Authenticating with RingCentral.")
           if @token.nil?
             @client.authorize_password @username, @extension, @password
           else
@@ -39,7 +40,7 @@ module Lita
         end
 
         def message(to_number, strings)
-          Lita.logger.info("Sending message to #{to_number}")
+          Lita.logger.info("#{@logger_prefix}Sending message to #{to_number}")
           Lita.logger.info MultiJson.encode(strings)
           strings.each do |s|
             @client.messages.sms.create(

@@ -1,4 +1,10 @@
 CHANGELOG
 ---------
+- **2016-09-05**: 0.0.3
+  - Add message filtering to ensure we are processing the correct events
+  - Add more logging info
+  - Update RingCentral SDK version requirement to 1.3.4 from 1.3.2
+- **2016-09-04**: 0.0.2
+  - Update RingCentral SDK version requirement to 1.3.2 from 1.0.0
 - **2016-08-23**: 0.0.1
   - Initial commit
