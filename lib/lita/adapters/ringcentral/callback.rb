@@ -14,10 +14,12 @@ module Lita
 
         def update(message)
           Lita.logger.info 'Processing RingCentral Message'
+          Lita.logger.info MultiJson.encode message
           user_phone_number = message['body']['from']['phoneNumber']
+          Lita.logger.info "Message received from #{user_phone_number}"
           user = Lita::User.find_by_name user_phone_number
           user = create_user(message['body']['from']) unless user
-          source = Lita::Source.new user: user, room: user_phone_number
+          source = Lita::Source.new user: user #, room: user_phone_number
           post = message['body']['subject'].to_s
           msg = Lita::Message.new @robot, post, source
           @robot.receive msg
