@@ -66,7 +66,7 @@ See [CHANGELOG.md](CHANGELOG.md)
 
 Project Repo
 
-* https://github.com/grokify/lita-ringcentral
+* https://github.com/ringcentral-ruby/lita-ringcentral
 
 Lita
 
@@ -74,7 +74,7 @@ Lita
 
 ## Contributing
 
-1. Fork it ( http://github.com/grokify/lita-ringcentral/fork )
+1. Fork it ( http://github.com/ringcentral-ruby/lita-ringcentral/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -82,7 +82,7 @@ Lita
 
 ## License
 
-Lita RingCentral Adapter is available under the MIT license. See [LICENSE.txt](LICENSE.txt) for details.
+Lita RingCentral Adapter is available under the MIT license. See [LICENSE.md](LICENSE.md) for details.
 
 Lita RingCentral Adapter &copy; 2016 by John Wang
 
@@ -90,17 +90,17 @@ Lita RingCentral Adapter &copy; 2016 by John Wang
  [gem-version-link]: http://badge.fury.io/rb/lita-ringcentral
  [downloads-svg]: http://ruby-gem-downloads-badge.herokuapp.com/lita-ringcentral
  [downloads-link]: https://rubygems.org/gems/lita-ringcentral
- [build-status-svg]: https://api.travis-ci.org/grokify/lita-ringcentral.svg?branch=master
- [build-status-link]: https://travis-ci.org/grokify/lita-ringcentral
- [coverage-status-svg]: https://coveralls.io/repos/grokify/lita-ringcentral/badge.svg?branch=master
- [coverage-status-link]: https://coveralls.io/r/grokify/lita-ringcentral?branch=master
- [dependency-status-svg]: https://gemnasium.com/grokify/lita-ringcentral.svg
- [dependency-status-link]: https://gemnasium.com/grokify/lita-ringcentral
- [codeclimate-status-svg]: https://codeclimate.com/github/grokify/lita-ringcentral/badges/gpa.svg
- [codeclimate-status-link]: https://codeclimate.com/github/grokify/lita-ringcentral
- [scrutinizer-status-svg]: https://scrutinizer-ci.com/g/grokify/lita-ringcentral/badges/quality-score.png?b=master
- [scrutinizer-status-link]: https://scrutinizer-ci.com/g/grokify/lita-ringcentral/?branch=master
+ [build-status-svg]: https://api.travis-ci.org/ringcentral-ruby/lita-ringcentral.svg?branch=master
+ [build-status-link]: https://travis-ci.org/ringcentral-ruby/lita-ringcentral
+ [coverage-status-svg]: https://coveralls.io/repos/ringcentral-ruby/lita-ringcentral/badge.svg?branch=master
+ [coverage-status-link]: https://coveralls.io/r/ringcentral-ruby/lita-ringcentral?branch=master
+ [dependency-status-svg]: https://gemnasium.com/ringcentral-ruby/lita-ringcentral.svg
+ [dependency-status-link]: https://gemnasium.com/ringcentral-ruby/lita-ringcentral
+ [codeclimate-status-svg]: https://codeclimate.com/github/ringcentral-ruby/lita-ringcentral/badges/gpa.svg
+ [codeclimate-status-link]: https://codeclimate.com/github/ringcentral-ruby/lita-ringcentral
+ [scrutinizer-status-svg]: https://scrutinizer-ci.com/g/ringcentral-ruby/lita-ringcentral/badges/quality-score.png?b=master
+ [scrutinizer-status-link]: https://scrutinizer-ci.com/g/ringcentral-ruby/lita-ringcentral/?branch=master
  [docs-rubydoc-svg]: https://img.shields.io/badge/docs-rubydoc-blue.svg
  [docs-rubydoc-link]: http://www.rubydoc.info/gems/lita-ringcentral/
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-link]: https://github.com/grokify/lita-ringcentral/blob/master/LICENSE.txt
+ [license-link]: https://github.com/ringcentral-ruby/lita-ringcentral/blob/master/LICENSE.md
