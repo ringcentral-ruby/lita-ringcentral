@@ -6,12 +6,12 @@ Gem::Specification.new do |spec|
   spec.email         = ["johncwang@gmail.com"]
   spec.description   = %q{A RingCentral SMS adapter for Lita.}
   spec.summary       = %q{A RingCentral SMS adapter for the Lita chat robot.}
-  spec.homepage      = 'https://github.com/grokify/lita-ringcentral'
+  spec.homepage      = 'https://github.com/ringcentral-ruby'
   spec.license       = 'MIT'
   spec.metadata      = { 'lita_plugin_type' => 'adapter' }
 
   spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename f }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
