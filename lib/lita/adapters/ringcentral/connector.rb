@@ -9,7 +9,12 @@ module Lita
 
         def initialize(robot, app_key, app_secret, server, username, extension, password, token, sms_number, debug: false)
           @robot = robot
-          @client = RingCentralSdk.new app_key, app_secret, server
+          @client = RingCentral::Sdk::REST::Client new do |config|
+            config.server_url = server
+            config.app_key = app_key
+            config.app_secret = app_secret
+            config.logger = Lita.logger
+          end
           @username = username
           @extension = extension
           @password = password
