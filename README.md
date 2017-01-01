@@ -5,6 +5,7 @@ Lita RingCentral Adapter
 [![Build Status][build-status-svg]][build-status-link]
 [![Coverage Status][coverage-status-svg]][coverage-status-link]
 [![Dependency Status][dependency-status-svg]][dependency-status-link]
+[![Codacy Badge][codacy-svg]][codacy-link]
 [![Code Climate][codeclimate-status-svg]][codeclimate-status-link]
 [![Scrutinizer Code Quality][scrutinizer-status-svg]][scrutinizer-status-link]
 [![Downloads][downloads-svg]][downloads-link]
@@ -96,6 +97,8 @@ Lita RingCentral Adapter &copy; 2016 by John Wang
  [coverage-status-link]: https://coveralls.io/r/ringcentral-ruby/lita-ringcentral?branch=master
  [dependency-status-svg]: https://gemnasium.com/ringcentral-ruby/lita-ringcentral.svg
  [dependency-status-link]: https://gemnasium.com/ringcentral-ruby/lita-ringcentral
+ [codacy-svg]: https://api.codacy.com/project/badge/Grade/7e769fa345eb4713ade44ef0e7e882fb
+ [codacy-link]: https://www.codacy.com/app/ringcentral-ruby/lita-ringcentral
  [codeclimate-status-svg]: https://codeclimate.com/github/ringcentral-ruby/lita-ringcentral/badges/gpa.svg
  [codeclimate-status-link]: https://codeclimate.com/github/ringcentral-ruby/lita-ringcentral
  [scrutinizer-status-svg]: https://scrutinizer-ci.com/g/ringcentral-ruby/lita-ringcentral/badges/quality-score.png?b=master
