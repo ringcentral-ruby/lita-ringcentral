@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-ringcentral'
-  spec.date          = '2016-12-28'
+  spec.date          = '2016-12-31'
   spec.version       = '0.1.0'
   spec.authors       = ['John Wang']
   spec.email         = ["johncwang@gmail.com"]
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'lita', '~> 4.4', '>= 4.4.3'
-  spec.add_runtime_dependency 'ringcentral_sdk', '~> 2.0', '>= 2.0.2'
+  spec.add_runtime_dependency 'ringcentral_sdk', '~> 2.0', '>= 2.0.3'
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'pry-byebug', '~> 3', '>= 3.4.2'

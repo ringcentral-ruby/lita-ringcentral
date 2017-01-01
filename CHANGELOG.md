@@ -1,7 +1,7 @@
 CHANGELOG
 ---------
-- **2016-12-20**: 0.1.0
-  - Update to RingCentralSdk 2.0.0
+- **2016-12-31**: 0.1.0
+  - Update to RingCentralSdk 2.0.3
   - Use `Lita.logger` in RingCentralSdk
 - **2016-09-05**: 0.0.3
   - Add message filtering to ensure we are processing the correct events
