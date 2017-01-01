@@ -7,7 +7,7 @@ module Lita
       class Connector
         attr_reader :robot, :client
 
-        def initialize(robot, app_key, app_secret, server, username, extension, password, token, sms_number, debug: false)
+        def initialize(robot, app_key, app_secret, server, username, extension, password, token, sms_number)
           @robot = robot
           @client = RingCentralSdk::REST::Client.new do |config|
             config.server_url = server
