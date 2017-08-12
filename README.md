@@ -12,6 +12,9 @@ Lita RingCentral Adapter
 [![Docs][docs-rubydoc-svg]][docs-rubydoc-link]
 [![License][license-svg]][license-link]
 
+[![Stack Overflow][stackoverflow-svg]][stackoverflow-url]
+[![Chat][chat-svg]][chat-url]
+
 `lita-ringcentral` is an adapter for [Lita](https://www.lita.io/) that allows you to use the robot with [RingCentral](https://developers.ringcentral.com/) via SMS.
 
 ## Installation
@@ -107,3 +110,5 @@ Lita RingCentral Adapter &copy; 2016 by John Wang
  [docs-rubydoc-link]: http://www.rubydoc.info/gems/lita-ringcentral/
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
  [license-link]: https://github.com/ringcentral-ruby/lita-ringcentral/blob/master/LICENSE.md
+ [stackoverflow-svg]: https://img.shields.io/badge/Stack%20Overflow-ringcentral-orange.svg
+ [stackoverflow-url]: https://stackoverflow.com/questions/tagged/ringcentral
